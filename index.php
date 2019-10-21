@@ -129,22 +129,22 @@ if ( $month==1 ) {
 
         ?>
         <div class="mm"> 
-        <a href="index.php?month=<?=12;?>&year=<?=($y-1);?>">上一月</a>
-        <a href="index.php?month=<?=$month+1;?>&year=<?=($y);?>">下一月</a>  
+        <a href="?month=<?=12;?>&year=<?=($y-1);?>">上一月</a>
+        <a href="?month=<?=$month+1;?>&year=<?=($y);?>">下一月</a>  
         </div>   
         <?php
     } else if($month==12){
         ?>
         <div class="mm">
-        <a href="index.php?month=<?=$month-1;?>&year=<?=($y);?>">上一月</a>
-        <a href="index.php?month=<?=1;?>&year=<?=($y+1);?>">下一月</a>
+        <a href="?month=<?=$month-1;?>&year=<?=($y);?>">上一月</a>
+        <a href="?month=<?=1;?>&year=<?=($y+1);?>">下一月</a>
         </div> 
         <?php
     }else {
         ?>
         <div class="mm">
-        <a href="index.php?month=<?=$month-1;?>&year=<?=($y);?>">上一月</a>
-        <a href="index.php?month=<?=$month+1;?>&year=<?=($y);?>">下一月</a>
+        <a href="?month=<?=$month-1;?>&year=<?=($y);?>">上一月</a>
+        <a href="?month=<?=$month+1;?>&year=<?=($y);?>">下一月</a>
         </div> 
         <?php
     }
